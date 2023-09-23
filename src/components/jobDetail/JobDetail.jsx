@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md"
 import { GoLocation } from "react-icons/go"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from '../../utility/LocalStorage'
 
 function JobDetail() {
     const alljob = useLoaderData();
@@ -14,6 +15,7 @@ function JobDetail() {
     // console.log(targetedJob)
     const handleApply = () => {
         toast("You have applied successfully")
+        saveJobApplication(parseInt(id))
     }
     return (
         <div className='container mx-auto py-20'>
