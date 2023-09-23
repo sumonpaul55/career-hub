@@ -1,8 +1,8 @@
-
+import React from "react"
 function AppliedJobs() {
   return (
     <div className="container mx-auto">
-        <h1>AppliedJobs</h1>
+      <h1>AppliedJobs</h1>
 
     </div>
   )

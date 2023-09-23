@@ -1,9 +1,14 @@
-
+import React from 'react'
+import Banner from './banner/Banner'
+import FeaturedJobs from './featuredJobs/FeaturedJobs'
+import CategoryList from './categoryList/CategoryList'
 
 function Home() {
   return (
-    <div>
-        <h3>this is home</h3>
+    <div className=''>
+      <Banner></Banner>
+      <CategoryList></CategoryList>
+      <FeaturedJobs></FeaturedJobs>
     </div>
   )
 }
